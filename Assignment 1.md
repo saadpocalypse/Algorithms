@@ -5,11 +5,14 @@ Note: Stay Java/Python/C++ free.
 
 ## Answer
 ### Brute Force:
-```counter = 0
-for element in inputList:
-if counter = = len(inputList) // 2: counter = counter + 1
-elif counter + 1 != len(inputList) and counter + 1 != len(inputList) // 2 nodeToSwap = inputList[counter]
-inputList[counter] = inputList[counter + 1]
-inputList[counter + 1] = nodeToSwap
-counter = counter + 2 else:
-counter = counter + 1```
+counter = 0 <br>
+for element in inputList:<br>
+  if counter == len(inputList) // 2: <br>
+    counter = counter + 1<br>
+  elif counter + 1 != len(inputList) and counter + 1 != len(inputList) // 2: <br>
+    nodeToSwap = inputList[counter]<br>
+    inputList[counter] = inputList[counter + 1]<br>
+    inputList[counter + 1] = nodeToSwap<br>
+    counter = counter + 2 <br>
+  else:<br>
+    counter = counter + 1<br>
