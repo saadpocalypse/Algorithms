@@ -1,9 +1,9 @@
 # Assignment 1 
 
+Note: Stay Java / Python / C++ free.
 ## Question 1
-Question # 1: [4 marks] 
 Consider that you are given a list of odd size. You have to swap the elements in such a way that first element should be swapped with its immediate right neighbouring element, 3rd element should be swapped with its immediate right neighbouring element and so on until all the elements in the list are processed. Middle element should be fixed and should not be swapped with any other element. Design an algorithm based on Brute Force Approach and another one based on Divide & Conquer Approach to solve this problem. <br>
-Note: Stay Java/Python/C++ free.
+
 
 ## Answer
 
