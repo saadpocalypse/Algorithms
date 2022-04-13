@@ -135,5 +135,7 @@ if (Left <= Right AND Left > 0) {
 }
 ```
 ## Answer
-
+The divide and conquer approach is to find the maximum value in a list of integers. The array of numbers is split recursively until only one element is left. <br><br>
+As it is returning the elements, it performs a comparison and returns the larger of the two towards the outer frame of the program. As the program ends, we will have extracted the largest element of the list. <br><br>
+The if statement in the program may lead to a semantic error. If Left is a negative number, the if condition will fail since it is not larger than 0, and Left will be returned instead of Right, which may be a positive integer.
 
