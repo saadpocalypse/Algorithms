@@ -64,6 +64,76 @@ for indexThree in range(0, M + N):
         indexOne = indexOne - 1
 ```
      
-                
+## Question 3
+Design Divide & Conquer based algorithms for the following operations: <br> (i) multiplication  <br> (ii) subtraction Will these algorthims be logically & mathematically true?    
 
-       
+## Answer
+### Multiplication
+```
+def multiplication(listInput, start, end):
+    if start == end:
+        return listInput[start]
+    elif end - start == 1:
+        return listInput[start] * listInput[end]
+    if end - start == 2:
+        return listInput[start] * listInput[start + 1] * listInput[end]
+    else:
+        floor = (start + end) // 2
+        ceiling = floor * 2
+        left = multiplication(listInput, start, floor)
+        middle = multiplication(listInput, floor + 1, ceiling)
+        right = multiplication(listInput, ceiling + 1, end)
+        return left * middle * right
+```
+
+### Subtraction
+```
+def subtraction(listInput, start, end):
+    if start == end:
+        return listInput[start]
+    elif end - start == 1:
+        return listInput[start] - listInput[end]
+    if end - start == 2:
+        return listInput[start] - listInput[start + 1] - listInput[end]
+    else:
+        floor = (start + end) // 2
+        ceiling = floor * 2
+        left = subtraction(listInput, start, floor)
+        middle = subtraction(listInput, floor + 1, ceiling)
+        right = subtraction(listInput, ceiling + 1, end)
+        return left - middle - right
+```
+
+Multiplication through divide and conquer makes logical and mathematical since due to the associative property of multiplication, which states that the mode of grouping of factors does not change the final result of the multiplication process. <br> <br>
+(1 * 2) * 3 = 1 * (2 * 3) <br>(2) * 3 = 1 * (6)<br>
+6 = 6 <br> <br>
+This property, however, is not true for subtraction, where a different grouping of factors yields a different result. <br> <br>
+(1 - 2) - 3 != 1 - (2 - 3) <br> (-1) - 3 != 1 - (-1) <br>
+-4 != 2 <br> <br>
+Essentially, what we are doing in a divide and conquer approach is similar to grouping of factors shown above. It makes logical and mathematical sense for multiplication but not for subtraction.
+      
+      
+## Question 4
+The following divide & conquer strategy is trying to solve a problem. Identify the problem that it is trying to solve.
+```
+int WHATS_GOING_ON(int[] A, int l, int r) {
+
+if (l == r) { // l stands for left-most array index.
+    return A[l];
+}
+
+mid = (l+r)/2;
+Left = 0;
+Right = 0;
+
+Left = WHATS_GOING_ON (A, l, mid);
+Right = WHATS_GOING_ON (A, mid+1, r);
+
+if (Left <= Right AND Left > 0) {
+    return Right;
+} else return Left;
+}
+```
+## Answer
+
+
