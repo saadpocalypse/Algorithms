@@ -39,7 +39,30 @@ for element in inputList:
 
 ```
 
-## Output
-The program output should produce two files:
-1. The 'output' file that contains all the tokens.
-2. The 'symbol table' file which shows the structure of the table being formed.
+## Divide and Conquer Approach
+```
+def swapTwo(inputList, start, end):
+    if start + 1 == end:
+        nodeToSwap = inputList[start]
+        inputList[counter] = inputList[counter + 1]
+        inputList[counter + 1] = nodeToSwap
+    else:
+        middle = (start + end) // 2
+        if (start - end + 1) % 2 != 0:
+            swapTwo(list, start, middle - 1)
+            swapTwo(list, middle + 1, end)
+        else:
+            if (start + middle) % 2 != 0:
+                swapTwo(list, start, middle)
+                swapTwo(list, middle + 1, end)
+            else:
+                swapTwo(list, start, middle + 1)
+                swapTwo(list, middle + 2, end)
+```
+
+
+
+                
+                
+
+       
