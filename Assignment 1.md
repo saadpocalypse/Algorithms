@@ -47,7 +47,23 @@ def swapTwo(inputList, start, end):
 ## Question 2
 Suppose X, Y and Z are arrays of integers of size M, N, and M + N, respectively. The numbers in array X and Y appear in ascending order. Write an algorithm to produce third array Z by merging arrays X and Y in descending order. (You cannot use the function 'sort'. Devise this logic yourself). Use brute force approach for designing your algorithm.
 
-                
+## Answer
+### Brute Force Approach inspired by Insertion Sort Algorithm
+
+```
+indexOne = M - 1
+indexTwo = N - 1
+for indexThree in range(0, M + N):
+    xElement = X[indexOne]
+    yElement = Y[indexTwo]
+    if yElement > xElement:
+        z[indexThree] = yElement
+        indexTwo = indexTwo - 1
+    else:
+        z[indexThree] = xElement
+        indexOne = indexOne - 1
+```
+     
                 
 
        
