@@ -98,3 +98,40 @@ def main():  # This function calls the driver function with different values bei
 
 main()
 ```
+### Test case 1:
+
+When I execute the following code:
+
+```
+driver(11, 4, [4, 5, 6, 7], [2, 4, 8, 9])
+```
+The output is:
+
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] <br>
+[0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4]<br>
+[0, 0, 0, 4, 5, 5, 5, 9, 9, 9, 9]<br>
+[0, 0, 0, 4, 5, 6, 6, 9, 10, 11, 11]<br>
+[0, 1, 1]<br>
+
+which is correct.
+
+### Test case 2:
+
+When I execute the following code:
+
+```
+driver(10, 3, [3, 4, 5], [4, 5, 6])
+```
+The output is:
+The output is:
+
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] <br>
+[0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4]<br>
+[0, 0, 0, 4, 5, 5, 5, 9, 9, 9, 9]<br>
+[0, 0, 0, 4, 5, 6, 6, 9, 10, 11, 11]<br>
+[0, 1, 1]<br>
+
+which is correct.
+
+
+
