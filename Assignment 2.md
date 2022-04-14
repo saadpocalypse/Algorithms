@@ -123,7 +123,6 @@ When I execute the following code:
 driver(10, 3, [3, 4, 5], [4, 5, 6])
 ```
 The output is:
-The output is:
 
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] <br>
 [0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4]<br>
@@ -133,5 +132,22 @@ The output is:
 
 which is correct.
 
+### Test case 3:
+
+When I execute the following code:
+
+```
+driver(10, 3, [4, 5, 6], [3, 4, 5])
+
+```
+The output is:
+
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] <br>
+[0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3]<br>
+[0, 0, 0, 0, 3, 4, 4, 4, 4, 7, 7]<br>
+[0, 0, 0, 0, 3, 4, 5, 5, 5, 7, 8]<br>
+[1, 0, 1]<br>
+
+which is correct.
 
 
