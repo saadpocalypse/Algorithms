@@ -178,4 +178,15 @@ def itemsToTake(weightsList, weightOfKnapsack, numberOfItems, tableArgument, lis
 ```
 How the function basically works is that it takes the table that was populated by the function _**knapsack**_ and it starts with the last element of the last row of the item. The function has to determine whether or not the item this row represents is contributing to the final profit. It checks the value in the box and then it checks the value in the box above, if the value in the box above is lesser, then the current row’s item is contributing the final profit. The weight of the current object is deducted from the maximum capacity of the knapsack and the cursor moves to the previous row. If the value in the box above is the same, then the current row’s item does not contribute to the final profit and the cursor moves above without triggering the item’s flag or deducting the weight from the maximum capacity of the knapsack. In any case, it has to check every single row of the table generated, and since the number of rows generated is equal to the number of total items, if the number of total items is denoted by x, the the time complexity of the function itemsToTake is O(x), since it is a simple traversal in a while loop.
 
+Consider the following table that was obtained from test case 2:
+```
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3]
+[0, 0, 0, 0, 3, 4, 4, 4, 4, 7, 7]
+[0, 0, 0, 0, 3, 4, 5, 5, 5, 7, 8]
+```
+The cursor begins at 8 in the last row, then it moves to 7 and then it moves to 3, it does not go to row of 0s as the loop breaks. It is evident the the loop runs 3 times, which is equal to the number of items in test case 2.
+
+The testing of this function is already done and written in the test cases of question 1.
+
 
