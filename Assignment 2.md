@@ -150,4 +150,31 @@ The output is:
 ```
 which is correct.
 
+## Question 2
+Modify the program made in the first question to display the item numbers filled in your knapsack. You need to maintain a separate list/array to keep track of the items. Test your program and perform a time analysis on it.
+
+## Answer
+In my code, a separate list of items is made where the items are stored as objects of a class.
+```
+class Item:  # All the items in my code are stored as objects of this class where the flag attribute determines
+    # whether or not they are contributing to the final profit.
+    def __init__(self, weight, profit, flag=False):
+        self.weight = weight
+        self.profit = profit
+        self.flag = flag
+```
+The items in the list have an attribute, flag, which is updated if the item is contributed to the final profit. Finally, the flags of the list are printed. The function which determines whether or not the product is contributing to the final profit is:
+```
+def itemsToTake(weightsList, weightOfKnapsack, numberOfItems, tableArgument, listOfItems):
+    while numberOfItems > 0 and weightOfKnapsack > 0:  # This function figures out what items contribute to the profit.
+        if tableArgument[numberOfItems][weightOfKnapsack] == tableArgument[numberOfItems - 1][weightOfKnapsack]:
+            numberOfItems = numberOfItems - 1
+        else:
+            listOfItems[numberOfItems - 1].flag = True
+            numberOfItems = numberOfItems - 1
+            weightOfKnapsack = weightOfKnapsack - weightsList[numberOfItems]
+
+    return listOfItems
+```
+
 
