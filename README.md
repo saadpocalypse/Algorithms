@@ -1,4 +1,4 @@
-# Word Search
+# Design and Analysis of Algorithms
 
 This is a word search game I made in my Design ang Analysis of Algorithms course (COMP 303).
 
