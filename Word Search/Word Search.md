@@ -13,4 +13,4 @@ My program takes two files as input:
 The program creates a 'dictionary' of all the words, splitting them into 26 different arrays, one for each letter. <br>
 Then, the program isolates all the diagonals, columns and rows, forwards and backwards as strings. <br>
 The program goes through these strings character by character, it runs every possible word of the chosen character through a function that checks whether or not the word exists in the particular string. <br>
-To make the program more efficient, all the words below the legnth of 3 and greater than 9 are filtered out. <br>
+To make the program more efficient, all the words below the legnth of 3 and greater than 9 are filtered out and no character is checked for twice in a single string. <br>
