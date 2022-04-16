@@ -10,3 +10,6 @@ Assignment 2 consists of Knapsack 0/1 problem implemented using dynamic programm
 
 ## Word Search
 Word Search was a bonus assignment.
+
+## Sudoku
+Sudoku was a bonus assignment.
