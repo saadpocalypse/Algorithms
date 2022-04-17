@@ -7,4 +7,4 @@ A group of students designed an internet upload-manager application. For each  p
 2. Time in millisec required to upload that process.  
 <br>
 
-The application has to filter a subset of processes to upload in total time *T* from *n* number of total processes. Use dynamic programming to fill the table given below for this scenario. Target is to find the total data in MB(Megabytes) that the application has selected to upload in total time *T*.
+The application has to filter a subset of processes to upload in total time *T* from *n* number of total processes. Use dynamic programming to fill the table given below for this scenario. **The target is to find the total data in MB(Megabytes) that the application has selected to upload in total time *T*.**
