@@ -22,3 +22,6 @@ The application has to filter a subset of processes to upload in total time *T* 
 |t<sub>1</sub> = 4ms<br>d<sub>1</sub> = 2 MB      |  0 |  0    | 0  | 0     |  2 |   2   |  2 |   2   |  2 |   2   |  2 |
 |t<sub>2</sub> = 3ms<br>d<sub>2</sub> = 5 MB |  0 |   0   | 0  |   5   | 5  |   5   | 5  |   7   |  7 |   7   |  7 |
 |t<sub>3</sub> = 5ms<br>d<sub>3</sub> = 7 MB |  0 |   0   | 0  |   5   | 5  |   7   |  7 |   7   |  12 |    12  | 12  |
+
+## Formula Used
+V[i, w] = max{V[i-1, w], V[i-1, w - w[i]] + P[i]}
