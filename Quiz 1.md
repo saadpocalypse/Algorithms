@@ -3,7 +3,7 @@
 # Question
 
 A group of students designed an internet upload-manager application. For each  process the application receives: 
-1. Data in MB (Mega Bytes)of that process 
+1. Data in MB (Mega Bytes)of that process.
 2. Time in millisec required to upload that process.  
 <br>
 
