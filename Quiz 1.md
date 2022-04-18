@@ -16,3 +16,9 @@ The application has to filter a subset of processes to upload in total time *T* 
 |t<sub>3</sub> = 5ms<br>d<sub>3</sub> = 7 MB |   |      |   |      |   |      |   |      |   |      | Target Cell  |
 
 # Answer
+
+|t<sub>n</sub><br>d<sub>n</sub>| 0 | 1    | 3 | 3    | 4 | 5    | 6 | 7    | 8 | 9    | T = 10 |
+| -----| --| -----| --| -----| --| -----| --| -----| --| -----| --|
+|t<sub>1</sub> = 4ms<br>d<sub>1</sub> = 2 MB      |   |      |   |      |   |      |   |      |   |      |   |
+|t<sub>2</sub> = 3ms<br>d<sub>2</sub> = 5 MB |   |      |   |      |   |      |   |      |   |      |   |
+|t<sub>3</sub> = 5ms<br>d<sub>3</sub> = 7 MB |   |      |   |      |   |      |   |      |   |      | Target Cell  |
