@@ -32,3 +32,10 @@ V[2, 3] = max{V[2-1, 3], V[2-1, 3 - 3[2]] + P[2]} <br> <br>
 V[1, 3] = 5 <br> V[2, -2] = undefined <br>
 Therefore, max = 5 <br>
 V[2, 3] = 5
+
+### Example 2
+V[i, w] = max{V[i-1, w], V[i-1, w - w[i]] + P[i]} <br>
+V[2, 4] = max{V[2-1, 4], V[2-1, 4 - 4[2]] + P[2]} <br> <br>
+V[1, 4] = 5 <br> V[1, -1] = undefined <br>
+Therefore, max = 5 <br>
+V[2, 4] = 5
