@@ -8,8 +8,12 @@ Assignment 1 consists of certain problems and their solutions through divide and
 ## Assignment 2
 Assignment 2 consists of Knapsack 0/1 problem implemented using dynamic programming approach.
 
+## Quiz 1
+Quiz 1 was regarding the Knapsack 0/1 problem.
+
 ## Word Search
 Word Search was a bonus assignment.
 
 ## Sudoku
 Sudoku was a bonus assignment.
+
