@@ -47,9 +47,9 @@ V[0, 3] = max{V[0-1, 3], V[0-1, 3 - 3[0]] + P[0]}
 max(undefined, 2) <br>
 V[0, 3] = 2
 
-### Example 3
+### Example 4
 V[i, w] = max{V[i-1, w], V[i-1, w - w[i]] + P[i]} <br>
-V[0, 3] = max{V[0-1, 3], V[0-1, 3 - 3[0]] + P[0]}
+V[1, 2] = max{V[1-1, 2], V[1-1, 2 - 2[1]] + P[1]}
 #### Simplified
-max(undefined, 2) <br>
-V[0, 3] = 2
+max(0, 5) <br>
+V[1, 2] = 5
