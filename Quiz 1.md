@@ -54,7 +54,7 @@ V[1, 2] = max{V[1-1, 2], V[1-1, 2 - 2[1]] + P[1]}
 max(0, 5) <br>
 V[1, 2] = 5
 
-### Example 4
+### Example 5
 V[i, w] = max{V[i-1, w], V[i-1, w - w[i]] + P[i]} <br>
 V[1, 2] = max{V[1-1, 2], V[1-1, 2 - 2[1]] + P[1]}
 #### Simplified
