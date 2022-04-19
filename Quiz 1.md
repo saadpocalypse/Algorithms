@@ -58,5 +58,5 @@ V[1, 2] = 5
 V[i, w] = max{V[i-1, w], V[i-1, w - w[i]] + P[i]} <br>
 V[1, 7] = max{V[1-1, 7], V[1-1, 7 - 7[1]] + P[1]}
 #### Simplified
-max(2, 2 + 5) <br>
+max(2, 7) <br>
 V[1, 7] = 7
