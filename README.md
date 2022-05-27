@@ -15,14 +15,14 @@ Assignment 2 consists of Knapsack 0/1 problem implemented using dynamic programm
 
 <hr>
 
-#Quizzes
+# Quizzes
 
 ### Quiz 1
 Quiz 1 was regarding the Knapsack 0/1 problem.
 
 <hr>
 
-#Projects
+# Projects
 
 ### Word Search
 Word Search was a bonus assignment.
