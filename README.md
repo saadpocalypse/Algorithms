@@ -2,7 +2,7 @@
 
 This repository consists of some of the work I did in my Design and Analysis of Algorithms course (COMP 303).
 
-$# Assignments
+# Assignments
 
 ### Assignment 1
 Assignment 1 consists of certain problems and their solutions through divide and conquer and brute force approaches.
